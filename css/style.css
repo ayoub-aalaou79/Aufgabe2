@@ -1,0 +1,107 @@
+/*start utility */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*end utility */
+
+/*start calender*/
+#calender{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.calender-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .calender-wrapper {
+    background-color: #028174;
+    color: #0AB68B;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  */
+
+.calender-wrapper .month-navigation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #028174;
+
+}
+
+
+.calender-wrapper .month-navigation-wrapper a{
+    padding: 28px 20px;
+    cursor: pointer;
+    background-color: #028174;
+    /* height: 100%; */
+    border: 0;
+}
+
+.calender-wrapper .month-navigation-wrapper a:hover{background-color: #016056;}
+
+.calender-wrapper .month-navigation-wrapper a i{
+    color: #0AB68B;
+    font-size: 24px;
+}
+
+.calender-wrapper .month-navigation-wrapper span{font-size: 18px;font-weight: 600;color: #0AB68B;}
+
+.calender-wrapper .calender-table{
+    height: 100%;
+    border: none;
+
+    /*to fix */
+    table-layout: fixed;
+    width: 100%;
+}
+
+.calender-table thead{
+    height: 15%;
+    background-color: #0AB68B;
+    color: #92DE8B;
+}
+
+.calender-table thead tr th:hover{
+    background-color: #089672;
+}
+
+
+.calender-wrapper .calender-table tbody tr td{
+    text-align: center;
+    margin: 4px;
+    border: 1px solid #e1dede;
+    color: #016056;
+    font-weight: 400;
+}
+
+.calender-wrapper .calender-table tbody tr td.today, .calender-wrapper .calender-table tbody tr td:hover{
+    background-color: #028174;
+    color: #0AB68B;
+}
+
+.prevMonthDays, .nextMonthDays{
+    background-color: #f7f6f6;
+    color: #e1dede !important;
+}
+
+.prevMonthDays:hover, .nextMonthDays:hover{
+    background-color: #ece8e8 !important;
+    cursor: pointer;
+}
+/*end calender*/
